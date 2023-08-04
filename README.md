@@ -1,7 +1,7 @@
 # NEWTSS
 *Numerically Estimated Wave Telescope Subset Selector*
 
-An technique to estimate the error in the wave telescope method as a function of wavevector magnitude.
+A technique to estimate the error in the wave telescope method as a function of wavevector magnitude.
 
 
 
