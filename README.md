@@ -41,6 +41,7 @@ Er_thres = 20                   # see above
 
 Finally, the code produces a series of figures to visuallize its selection of subset at each scale. The concluding figure, found in the 'Optimal_Ngon' folder, will picture the distribution of error at each scale after selection of the best subset. It also show how many spacecraft ($N$) are in this optimal subset, what the size ($L$) of this subset is, and what it's shape parameter ($\chi$) is.
 
+
 ![Example Optimization](NEWTSS_on_HelioSwarm/figures/Optimal_Ngon/HS_hour94.png)
 
 
