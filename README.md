@@ -13,6 +13,8 @@ $\log_{10}Error(\bar{k},\chi) \sim N(\mu, \sigma).$
 
 However, there were a population of events that did not follow this distribution. These events occured when the wave signal was *aliased*. We captured the probability of this occuring in the equation $P(alias|\bar{k},\chi)$. We captured the mean and standard deviation of the error in the method in all other cases in the equations $\mu(\bar{k},\chi)$ and $\sigma(\bar{k},\chi)$. These equations have the form
 - $\mu(\bar{k},\chi) = \log_{10}(a_0^{\chi - a_1} + a_2) + (a_3^{\chi - a_4} + a_5)\log_{10}\bar{k}$
+- $\sigma(\bar{k},\chi) = c_0 + c_1\log_{10}\bar{k} + c_2 \chi^2$
+- $P(alias|\bar{k},\chi) = 0.5( 1 + \tanh[4\log_{10}\bar{k} + b_0\chi^2 + b_1\chi + b_2] )$
 
 ## How to Use
 Unaltered, the code will read in the supplied spacecraft positional files from an example (pre Phase-B) 9-spacecraft HelioSwarm configuration. It will then select the optimal subset of spacecraft for a range of wavevectors for one of the configurations (the default is the configuration at hour 94 of the mission). The optimal is selected by minimizing the quantity $\mu_{error} + \alpha \sigma_{error}$ (where $\alpha=2$ by default). To alter which hour configuration is optimized or what this $\alpha$ value is, change these lines of code:
